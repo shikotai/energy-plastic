@@ -1,0 +1,57 @@
+.error-screen {
+  min-height: 100vh;
+  padding: 32px;
+  display: grid;
+  place-items: center;
+  background: #f2faf5;
+}
+
+.error-screen__card {
+  width: min(620px, 100%);
+  padding: 44px;
+  border: 1px solid #dfe9e3;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(10, 77, 45, 0.08);
+}
+
+.error-screen__card > span {
+  color: #138552;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+}
+
+.error-screen__card h1 {
+  margin: 22px 0 12px;
+  font-size: clamp(38px, 7vw, 64px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.error-screen__card p {
+  color: #68766e;
+  line-height: 1.65;
+}
+
+.error-screen__actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 10px;
+}
+
+.error-screen__actions button,
+.error-screen__actions a {
+  min-height: 46px;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: #0d6d45;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,506 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "technology": "Technology",
+    "solutions": "Solutions",
+    "project": "Project",
+    "team": "Team",
+    "news": "News",
+    "contacts": "Contacts",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "MATERIALS • SAFETY • TECHNOLOGY",
+      "title": "Next-generation materials for safer infrastructure",
+      "text": "Energy Plastic develops fire-resistant compositions and technology solutions for cable products with reduced smoke and gas emissions.",
+      "primary": "Our technology",
+      "secondary": "About the project",
+      "badge1": "TRL 6",
+      "badge2": "up to 120°C",
+      "badge3": "Kazakhstan",
+      "badgeLabels": {
+        "trl": "technology readiness",
+        "thermal": "microcapsule thermal stability",
+        "local": "local development"
+      }
+    },
+    "intro": {
+      "eyebrow": "WHY IT MATTERS",
+      "title": "Safety starts with the material",
+      "text": "For high-occupancy facilities and critical infrastructure, cable solutions that resist flame propagation and reduce smoke and gas emissions are especially important.",
+      "cards": {
+        "fire": {
+          "title": "Fire resistance",
+          "text": "Functional additives designed to improve the fire safety of cable materials."
+        },
+        "smoke": {
+          "title": "Low smoke emissions",
+          "text": "A focus on LS/LSLTx solutions for safer infrastructure operation."
+        },
+        "local": {
+          "title": "Local technology",
+          "text": "Developing domestic manufacturing capabilities and reducing dependence on imported solutions."
+        }
+      }
+    },
+    "technology": {
+      "eyebrow": "TECHNOLOGY",
+      "title": "Microencapsulated flame-retardant additives",
+      "text": "The project is based on functional microcapsules integrated into polymer compositions for cable materials. The approach is intended to improve thermal stability and resistance to combustion.",
+      "steps": {
+        "one": {
+          "number": "01",
+          "title": "Microcapsule",
+          "text": "A functional flame-retardant additive enclosed in a stable shell."
+        },
+        "two": {
+          "number": "02",
+          "title": "Polymer composition",
+          "text": "Integration of additives into insulation and sheath materials."
+        },
+        "three": {
+          "number": "03",
+          "title": "Cable solution",
+          "text": "Application of the technology in products with increased fire-safety requirements."
+        }
+      },
+      "stat1Label": "Microcapsule thermal stability",
+      "stat2Label": "Current technology readiness level",
+      "shellLabel": "shell",
+      "coreLabel": "active component"
+    },
+    "solution": {
+      "eyebrow": "FLAGSHIP SOLUTION",
+      "title": "AVVGng(A)-LSLTx",
+      "text": "The project covers the development and commercialization of a cable solution with enhanced fire safety for high-occupancy facilities and critical infrastructure.",
+      "features": {
+        "one": "Reduced smoke and gas emissions",
+        "two": "Resistance to flame propagation",
+        "three": "Microencapsulated flame-retardant components",
+        "four": "Focus on local production"
+      },
+      "note": "Technical specifications and certification status will be refined as pilot-industrial testing progresses."
+    },
+    "applications": {
+      "eyebrow": "APPLICATIONS",
+      "title": "For infrastructure where safety requirements are especially high",
+      "items": {
+        "energy": {
+          "title": "Energy",
+          "text": "CHP plants, energy facilities and critical engineering infrastructure."
+        },
+        "transport": {
+          "title": "Transport",
+          "text": "Airports, metro systems, railway and logistics hubs."
+        },
+        "public": {
+          "title": "Public facilities",
+          "text": "Schools, hospitals, administrative and public buildings."
+        },
+        "industry": {
+          "title": "Industry & construction",
+          "text": "Industrial facilities, business centres and major construction projects."
+        }
+      }
+    },
+    "roadmap": {
+      "eyebrow": "ROADMAP",
+      "title": "From laboratory development to industrial production",
+      "years": {
+        "y2026": {
+          "year": "2026",
+          "title": "Preparation",
+          "items": [
+            "Prepare production capacity",
+            "Purchase consumables",
+            "Work on intellectual property",
+            "Create the project’s digital platform"
+          ]
+        },
+        "y2027": {
+          "year": "2027",
+          "title": "Piloting",
+          "items": [
+            "Purchase equipment",
+            "Produce a pilot batch",
+            "Quality control",
+            "Product promotion"
+          ]
+        },
+        "y2028": {
+          "year": "2028",
+          "title": "Scale-up",
+          "items": [
+            "Obtain required permits",
+            "Industrial production",
+            "Commercial sales",
+            "Expand sales channels"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "COOPERATION",
+      "title": "Creating materials for next-generation infrastructure",
+      "text": "Open to technological, scientific and industrial cooperation.",
+      "button": "Contact us"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "ABOUT",
+      "title": "An engineering approach to material fire safety",
+      "text": "Energy Plastic works on technology solutions for cable products, combining materials science, industrial engineering practice and commercialization tasks."
+    },
+    "mission": {
+      "eyebrow": "OUR MISSION",
+      "title": "Improve infrastructure safety through new materials",
+      "text": "The project is focused on developing domestic fire-resistant compositions and introducing them into cable products with reduced smoke and gas emissions.",
+      "panel": "Energy Plastic brings together functional-material development and industrial implementation."
+    },
+    "principlesEyebrow": "PRINCIPLES",
+    "principlesTitle": "How we approach technology development",
+    "principles": [
+      {
+        "title": "Technology-driven",
+        "text": "Based on experimental research, materials engineering and reproducible technological processes."
+      },
+      {
+        "title": "Safety",
+        "text": "Focused on reducing fire risks for infrastructure and high-occupancy facilities."
+      },
+      {
+        "title": "Localization",
+        "text": "Developing domestic production and reducing logistics dependence."
+      }
+    ],
+    "focus": {
+      "eyebrow": "FOCUS",
+      "title": "From the laboratory to serial production",
+      "text": "The project has reached TRL 6 and is preparing for the next stage: pilot-industrial testing, certification and production scale-up.",
+      "stats": [
+        {
+          "value": "TRL 6",
+          "label": "current technology readiness level"
+        },
+        {
+          "value": "120°C",
+          "label": "confirmed microcapsule thermal stability"
+        },
+        {
+          "value": "2028",
+          "label": "planned industrial production"
+        }
+      ]
+    }
+  },
+  "technology": {
+    "hero": {
+      "eyebrow": "TECHNOLOGY",
+      "title": "Microcapsules as a functional element of flame protection",
+      "text": "The developed approach uses microencapsulated flame-retardant additives to influence polymer-material behavior during heating and combustion."
+    },
+    "how": {
+      "eyebrow": "PRINCIPLE",
+      "title": "How the technology works",
+      "steps": [
+        {
+          "title": "Microcapsule formation",
+          "text": "Creating a functional core and protective shell with controlled morphology."
+        },
+        {
+          "title": "Stabilization",
+          "text": "UF and PMMA shells preserve the functional component and improve thermal stability."
+        },
+        {
+          "title": "Integration",
+          "text": "Microcapsules are introduced into the polymer composition used in cable materials."
+        },
+        {
+          "title": "Testing",
+          "text": "Thermal characteristics, resistance to combustion and material stability are evaluated."
+        }
+      ]
+    },
+    "research": {
+      "eyebrow": "R&D RESULTS",
+      "title": "Validated development results",
+      "panel": "Microcapsule thermal stability reported in the project’s laboratory research results.",
+      "items": [
+        "The effectiveness of UF and PMMA shells was experimentally confirmed.",
+        "The phase-transition temperature increased from 49°C to 120°C.",
+        "Stable microcapsule morphology was obtained.",
+        "Self-extinguishing behavior was observed in combustion tests.",
+        "Prototypes were created and laboratory tests were completed.",
+        "A patent application was prepared."
+      ]
+    },
+    "standards": {
+      "eyebrow": "STANDARDS",
+      "title": "Aligned with industry requirements",
+      "text": "The project documentation references GOST, IEC and TR CU 004/2011 requirements. The final list of certificates and permits will be formed as the project moves through the industrial stage.",
+      "labels": [
+        "GOST",
+        "IEC",
+        "TR CU 004/2011"
+      ]
+    },
+    "cards": {
+      "fire": {
+        "title": "Resistance to combustion",
+        "text": "Material behavior under high temperatures and open flame is being studied."
+      },
+      "stability": {
+        "title": "Material stability",
+        "text": "Microcapsule morphology, thermal stability and reproducibility of properties are monitored."
+      }
+    }
+  },
+  "solutions": {
+    "hero": {
+      "eyebrow": "SOLUTIONS",
+      "title": "Materials and cable solutions for increased fire-safety requirements",
+      "text": "The project focuses on developing a fire-resistant composition and applying it in cable products for critical facilities."
+    },
+    "main": {
+      "eyebrow": "MAIN SOLUTION",
+      "title": "AVVGng(A)-LSLTx",
+      "text": "A cable solution with reduced smoke and gas emissions and resistance to flame propagation, designed to incorporate microencapsulated flame-retardant components.",
+      "panel": "The project’s flagship direction for facilities with increased fire-safety requirements.",
+      "features": [
+        "Enhanced fire safety",
+        "Low smoke and gas emissions",
+        "Self-extinguishing material behavior",
+        "Microencapsulated functional additives",
+        "Focus on local production",
+        "Designed for critical infrastructure"
+      ]
+    },
+    "materials": {
+      "eyebrow": "MATERIALS",
+      "title": "Fire-resistant compositions as a standalone technology platform",
+      "text": "The developed technology is considered not only as part of a single cable product, but also as a basis for adapting functional compositions to different cable-material requirements.",
+      "panel": "Microencapsulated functional additives as a technology foundation for polymer compositions."
+    },
+    "use": {
+      "eyebrow": "APPLICATIONS",
+      "title": "Where these solutions matter most",
+      "items": [
+        "Energy",
+        "Transport",
+        "Public infrastructure",
+        "Industry",
+        "Construction",
+        "Government infrastructure projects"
+      ],
+      "cardText": "A segment where fire safety and infrastructure reliability requirements are especially important."
+    }
+  },
+  "project": {
+    "hero": {
+      "eyebrow": "PROJECT",
+      "title": "Development and production of domestic fire-resistant compositions for cable manufacturing",
+      "text": "A commercialization project focused on developing domestic technology, preparing production capacity and moving toward industrial production."
+    },
+    "goal": {
+      "title": "Production and commercial sale of cable with enhanced fire safety",
+      "text": "The project aims to produce AVVGng(A)-LSLTx for high-occupancy facilities and critical infrastructure."
+    },
+    "problem": {
+      "title": "Increasing fire and technological safety requirements",
+      "text": "Standard cable solutions can create additional fire risks through flame propagation and smoke generation. Critical infrastructure especially needs local solutions aligned with modern safety requirements."
+    },
+    "local": {
+      "title": "Local production",
+      "text": "The project is focused on developing production capacity in Kazakhstan and reducing logistics risks."
+    },
+    "market": {
+      "eyebrow": "MARKET",
+      "title": "Focused on Kazakhstan’s infrastructure segments",
+      "items": [
+        {
+          "value": "30–35k km",
+          "label": "estimated annual total addressable market for fire-safe power cables"
+        },
+        {
+          "value": "15–18k km",
+          "label": "estimated serviceable market across key segments"
+        },
+        {
+          "value": "5–7%",
+          "label": "potential SAM share in the early stages of scale-up"
+        }
+      ]
+    },
+    "roadmap": {
+      "eyebrow": "IMPLEMENTATION PLAN",
+      "title": "A three-year path to industrial production",
+      "items": [
+        {
+          "year": "2026",
+          "title": "Preparation",
+          "items": [
+            "Prepare production capacity",
+            "Purchase consumables",
+            "File a patent application and register a trademark",
+            "Create the website"
+          ]
+        },
+        {
+          "year": "2027",
+          "title": "Piloting",
+          "items": [
+            "Purchase equipment",
+            "Promote the product",
+            "Produce a pilot batch",
+            "Quality control of finished products"
+          ]
+        },
+        {
+          "year": "2028",
+          "title": "Industrial production",
+          "items": [
+            "Purchase consumables",
+            "Obtain required permits",
+            "Industrial production",
+            "Sales of finished products"
+          ]
+        }
+      ]
+    },
+    "business": {
+      "eyebrow": "COMMERCIALIZATION",
+      "title": "A B2B model focused on infrastructure customers",
+      "channels": [
+        {
+          "value": "60%",
+          "label": "direct B2B sales"
+        },
+        {
+          "value": "25%",
+          "label": "distributors and trading companies"
+        },
+        {
+          "value": "10%",
+          "label": "exports to CIS countries"
+        },
+        {
+          "value": "5%",
+          "label": "special orders and project organizations"
+        }
+      ]
+    }
+  },
+  "team": {
+    "hero": {
+      "eyebrow": "TEAM",
+      "title": "Science, production and commercialization in one project team",
+      "text": "The project brings together specialists in cable production, materials, marketing and financial support."
+    },
+    "members": [
+      {
+        "name": "Ruslan Kaliyev",
+        "role": "Project Lead",
+        "short": "More than 15 years of experience in electric power engineering and cable manufacturing.",
+        "bio": "Graduated from the International Transport and Humanities University in Electric Power Engineering. Worked as head of the cable production department at Zhalyn. Since 2024, he has managed a cable manufacturing plant and is responsible for quality, production processes and commercial strategy."
+      },
+      {
+        "name": "Aydyn Akhmetzhanov",
+        "role": "Marketing Specialist",
+        "short": "Specialist in marketing, sales, CRM and market-channel development.",
+        "bio": "Has an educational background in international economics, trade and finance. Implemented and optimized CRM systems, improved sales and marketing collaboration, conducted market segmentation and optimized advertising budgets."
+      },
+      {
+        "name": "Indira Ilyasova",
+        "role": "Project Accountant",
+        "short": "Financial support, budget control and reporting.",
+        "bio": "Responsible for project accounting, financial-flow control, tax and HR reporting, timely fulfillment of financial obligations and financial support for the project lead."
+      },
+      {
+        "name": "Omirzak Kapizov",
+        "role": "Researcher",
+        "short": "Research in functional materials and scale-up of technology solutions.",
+        "bio": "Researcher at the Research Institute of New Chemical Technologies and Materials of Al-Farabi Kazakh National University. Specializes in the development and scale-up of functional materials, including solutions for energy systems and next-generation cable products."
+      },
+      {
+        "name": "Dauren Mukhanov",
+        "role": "Researcher",
+        "short": "Laboratory research, analysis and validation of results.",
+        "bio": "Experienced in research work, development and implementation of scientific and technical solutions, laboratory and production environments, and the analysis, interpretation and validation of experimental results."
+      }
+    ]
+  },
+  "news": {
+    "hero": {
+      "eyebrow": "NEWS",
+      "title": "Energy Plastic project updates",
+      "text": "News on technology development, testing, production stages and partnerships will be published here."
+    },
+    "empty": {
+      "title": "The section is ready for publications",
+      "text": "The project does not yet have confirmed public news, so we are not adding fictional press releases. New materials can later be connected through a single data array.",
+      "button": "Go to project"
+    },
+    "planned": {
+      "eyebrow": "NEXT STAGES",
+      "title": "What will shape the project’s news agenda",
+      "items": [
+        {
+          "year": "2026",
+          "title": "Production preparation and intellectual property",
+          "text": "Production capacity, consumables, patent application, trademark and website."
+        },
+        {
+          "year": "2027",
+          "title": "Pilot batch and testing",
+          "text": "Equipment procurement, pilot production and quality control of finished products."
+        },
+        {
+          "year": "2028",
+          "title": "Industrial production",
+          "text": "Permits, production scale-up and commercial sales."
+        }
+      ]
+    }
+  },
+  "contacts": {
+    "hero": {
+      "eyebrow": "CONTACTS",
+      "title": "Contact the project team",
+      "text": "For technology cooperation, commercial inquiries and project discussions, use the contacts provided in the project presentation."
+    },
+    "cards": {
+      "phone": "Phone numbers",
+      "email": "E-mail",
+      "location": "Region",
+      "locationValue": "Republic of Kazakhstan"
+    },
+    "note": "Before publishing the website, it is recommended to separately confirm that these are the official contacts of Energy Plastic LLP.",
+    "cooperation": {
+      "eyebrow": "COOPERATION",
+      "title": "Scientific, technological and industrial partnership",
+      "text": "The project is open to cooperation with cable manufacturers, design organizations, infrastructure customers and research partners.",
+      "panel": "Manufacturers, design organizations, infrastructure customers and research partners."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "It looks like this address does not exist yet.",
+    "button": "Back home"
+  },
+  "footer": {
+    "description": "Development of fire-resistant compositions and technology solutions for cable products.",
+    "navigation": "Navigation",
+    "contacts": "Project contacts",
+    "rights": "Energy Plastic. All rights reserved."
+  },
+  "errorBoundary": {
+    "title": "The page could not be displayed",
+    "text": "A user-interface error occurred. Reload the site or return to the home page.",
+    "reload": "Reload",
+    "home": "Home"
+  }
+}

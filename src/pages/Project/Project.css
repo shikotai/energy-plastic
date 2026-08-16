@@ -1,0 +1,7 @@
+.project-summary .info-card { min-height: 310px; }
+.project-market-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.project-channel-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px; }
+.project-channel-grid .stat-card { min-width: 0; }
+.content-section--dark .project-channel-grid .stat-card span { color: #68766e; }
+@media (max-width: 1050px) { .project-channel-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 760px) { .project-market-grid,.project-channel-grid { grid-template-columns: 1fr; } .project-summary .info-card { min-height: 0; } }
