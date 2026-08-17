@@ -6,6 +6,7 @@ import SectionCTA from "../../components/SectionCTA/SectionCTA";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { TextCard } from "../../types/content";
 import "../sharedPages.css";
+import { HERO_IMAGES } from "../../config/heroImages";
 
 const Technology = () => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ const Technology = () => {
 
   return (
     <main>
-      <PageHero eyebrow={t("technology.hero.eyebrow")} title={t("technology.hero.title")} text={t("technology.hero.text")} />
+      <PageHero eyebrow={t("technology.hero.eyebrow")} title={t("technology.hero.title")} text={t("technology.hero.text")} image={HERO_IMAGES.technology} />
 
       <section className="content-section">
         <div className="site-container two-column">

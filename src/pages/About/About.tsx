@@ -6,6 +6,7 @@ import SectionCTA from "../../components/SectionCTA/SectionCTA";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { Metric, TextCard } from "../../types/content";
 import "../sharedPages.css";
+import { HERO_IMAGES } from "../../config/heroImages";
 
 const About = () => {
   const { t } = useTranslation();
@@ -15,7 +16,7 @@ const About = () => {
 
   return (
     <main>
-      <PageHero eyebrow={t("about.hero.eyebrow")} title={t("about.hero.title")} text={t("about.hero.text")} />
+      <PageHero eyebrow={t("about.hero.eyebrow")} title={t("about.hero.title")} text={t("about.hero.text")} image={HERO_IMAGES.about} />
 
       <section className="content-section">
         <div className="site-container two-column two-column--center">

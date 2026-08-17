@@ -8,6 +8,7 @@ import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { Metric, TimelineItem } from "../../types/content";
 import "../sharedPages.css";
 import "./Project.css";
+import { HERO_IMAGES } from "../../config/heroImages";
 
 type FundingItem = {
   label: string;
@@ -23,7 +24,7 @@ const Project = () => {
 
   return (
     <main>
-      <PageHero eyebrow={t("project.hero.eyebrow")} title={t("project.hero.title")} text={t("project.hero.text")} />
+      <PageHero eyebrow={t("project.hero.eyebrow")} title={t("project.hero.title")} text={t("project.hero.text")} image={HERO_IMAGES.project} />
 
       <section className="content-section content-section--soft">
         <div className="site-container two-column two-column--center project-funding-grid">

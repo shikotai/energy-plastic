@@ -6,6 +6,7 @@ import PageHero from "../../components/PageHero/PageHero";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { NewsItem } from "../../types/content";
 import "../sharedPages.css";
+import { HERO_IMAGES } from "../../config/heroImages";
 
 const News = () => {
   const { t } = useTranslation();
@@ -16,8 +17,7 @@ const News = () => {
       <PageHero
         eyebrow={t("news.hero.eyebrow")}
         title={t("news.hero.title")}
-        text={t("news.hero.text")}
-      />
+        text={t("news.hero.text")} image={HERO_IMAGES.news} />
 
       <section className="content-section">
         <div className="site-container">

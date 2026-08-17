@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import PageHero from "../../components/PageHero/PageHero";
 import { SITE_CONTACTS } from "../../config/site";
 import "../sharedPages.css";
+import { HERO_IMAGES } from "../../config/heroImages";
 
 const Contacts = () => {
   const { t } = useTranslation();
@@ -13,8 +14,7 @@ const Contacts = () => {
       <PageHero
         eyebrow={t("contacts.hero.eyebrow")}
         title={t("contacts.hero.title")}
-        text={t("contacts.hero.text")}
-      />
+        text={t("contacts.hero.text")} image={HERO_IMAGES.contacts} />
 
       <section className="content-section">
         <div className="site-container">

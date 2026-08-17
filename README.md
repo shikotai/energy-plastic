@@ -95,3 +95,8 @@ Before public launch, confirm that those project contacts are officially assigne
 - Energy Plastic logo integrated into the header and footer.
 - Science Fund logo added to the Project page as the funding source.
 - Contact email updated to `energyplastic.kz@gmail.com`.
+
+
+## Hero photography
+
+Page hero images are configured in `src/config/heroImages.ts`. Source/credit references are listed in `HERO-IMAGE-SOURCES.md`.
