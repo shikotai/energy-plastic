@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import BrandLogo from "../BrandLogo/BrandLogo";
 import { SITE_LANGUAGES, SITE_ROUTES, type SiteLanguage } from "../../config/site";
 import "./NavigationHeader.css";
 
@@ -20,7 +21,9 @@ const NavigationHeader = () => {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   const changeLanguage = (language: SiteLanguage) => {
@@ -44,9 +47,8 @@ const NavigationHeader = () => {
   return (
     <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
       <div className="site-header__inner">
-        <NavLink className="brand" to="/" onClick={() => setMenuOpen(false)}>
-          <span className="brand__mark" aria-hidden="true"><span /><span /></span>
-          <span className="brand__text"><strong>ENERGY</strong><strong>PLASTIC</strong></span>
+        <NavLink className="brand" to="/" onClick={() => setMenuOpen(false)} aria-label="Energy Plastic">
+          <BrandLogo className="brand__logo" surface="light" />
         </NavLink>
 
         <nav className={`main-nav ${menuOpen ? "main-nav--open" : ""}`}>
@@ -62,9 +64,7 @@ const NavigationHeader = () => {
             </NavLink>
           ))}
 
-          <div className="language-switcher language-switcher--mobile">
-            {languageButtons}
-          </div>
+          <div className="language-switcher language-switcher--mobile">{languageButtons}</div>
         </nav>
 
         <div className="site-header__actions">
@@ -73,7 +73,7 @@ const NavigationHeader = () => {
             className="menu-button"
             type="button"
             aria-label={menuOpen ? t("nav.closeMenu") : t("nav.openMenu")}
-            onClick={() => setMenuOpen((value: boolean) => !value)}
+            onClick={() => setMenuOpen((value) => !value)}
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

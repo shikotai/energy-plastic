@@ -18,17 +18,16 @@
 
 .footer__logo {
   display: inline-flex;
-  gap: 7px;
   margin-bottom: 22px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 850;
-  letter-spacing: 0.06em;
   text-decoration: none;
 }
 
-.footer__logo span {
-  color: #62d397;
+.footer__brand-logo {
+  height: 74px;
+}
+
+.footer__brand-logo img {
+  height: 100%;
 }
 
 .footer__brand p {

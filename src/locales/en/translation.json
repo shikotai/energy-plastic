@@ -19,11 +19,11 @@
       "primary": "Our technology",
       "secondary": "About the project",
       "badge1": "TRL 6",
-      "badge2": "up to 120°C",
+      "badge2": "LSLTx",
       "badge3": "Kazakhstan",
       "badgeLabels": {
         "trl": "technology readiness",
-        "thermal": "microcapsule thermal stability",
+        "thermal": "cable solution",
         "local": "local development"
       }
     },
@@ -67,10 +67,12 @@
           "text": "Application of the technology in products with increased fire-safety requirements."
         }
       },
-      "stat1Label": "Microcapsule thermal stability",
-      "stat2Label": "Current technology readiness level",
+      "stat1Label": "target cable solution",
+      "stat2Label": "current technology readiness level",
       "shellLabel": "shell",
-      "coreLabel": "active component"
+      "coreLabel": "active component",
+      "stat1Value": "LSLTx",
+      "stat2Value": "TRL 6"
     },
     "solution": {
       "eyebrow": "FLAGSHIP SOLUTION",
@@ -187,8 +189,8 @@
           "label": "current technology readiness level"
         },
         {
-          "value": "120°C",
-          "label": "confirmed microcapsule thermal stability"
+          "value": "R&D",
+          "label": "laboratory research and experimental development"
         },
         {
           "value": "2028",
@@ -228,15 +230,17 @@
     "research": {
       "eyebrow": "R&D RESULTS",
       "title": "Validated development results",
-      "panel": "Microcapsule thermal stability reported in the project’s laboratory research results.",
+      "panel": "The technology is at the laboratory validation stage and is being prepared for the next scaling phase.",
       "items": [
-        "The effectiveness of UF and PMMA shells was experimentally confirmed.",
-        "The phase-transition temperature increased from 49°C to 120°C.",
-        "Stable microcapsule morphology was obtained.",
-        "Self-extinguishing behavior was observed in combustion tests.",
-        "Prototypes were created and laboratory tests were completed.",
-        "A patent application was prepared."
-      ]
+        "The effectiveness of UF and PMMA shells has been experimentally confirmed.",
+        "The thermal resistance of the material has been improved.",
+        "A stable microcapsule morphology has been achieved.",
+        "Self-extinguishing behavior was observed during combustion tests.",
+        "Prototype samples were created and laboratory tests were completed.",
+        "A patent application has been prepared."
+      ],
+      "panelLabel": "DEVELOPMENT STATUS",
+      "panelValue": "TRL 6"
     },
     "standards": {
       "eyebrow": "STANDARDS",
@@ -257,6 +261,12 @@
         "title": "Material stability",
         "text": "Microcapsule morphology, thermal stability and reproducibility of properties are monitored."
       }
+    },
+    "monitoring": {
+      "burnTitle": "Resistance to burning",
+      "burnText": "The behavior of the material under high temperature and open-flame exposure is being studied.",
+      "stabilityTitle": "Material stability",
+      "stabilityText": "Microcapsule morphology, thermal stability and reproducibility of properties are monitored."
     }
   },
   "solutions": {
@@ -390,6 +400,33 @@
         {
           "value": "5%",
           "label": "special orders and project organizations"
+        }
+      ]
+    },
+    "funding": {
+      "eyebrow": "FUNDING",
+      "title": "Project funding and participants",
+      "text": "The project is being implemented with the support of JSC “Science Fund” under the competition for grant funding for commercialization of scientific and (or) scientific-technical activity results.",
+      "logoCaption": "Funding source",
+      "logoAlt": "JSC Science Fund logo",
+      "sourceTitle": "JSC “Science Fund”",
+      "sourceText": "Funding source for the project and support for commercialization of scientific and scientific-technical results.",
+      "items": [
+        {
+          "label": "Funding source",
+          "value": "JSC “Science Fund”"
+        },
+        {
+          "label": "Competition",
+          "value": "Grant funding for commercialization of scientific and (or) scientific-technical activity results"
+        },
+        {
+          "label": "Grant recipient",
+          "value": "Energy Plastic LLP"
+        },
+        {
+          "label": "Competition winner and applicant",
+          "value": "AlAkSan LLP"
         }
       ]
     }

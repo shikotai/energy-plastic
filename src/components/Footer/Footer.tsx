@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import BrandLogo from "../BrandLogo/BrandLogo";
 import { SITE_CONTACTS } from "../../config/site";
 import "./Footer.css";
 
@@ -12,7 +13,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <NavLink className="footer__logo" to="/">ENERGY <span>PLASTIC</span></NavLink>
+          <NavLink className="footer__logo" to="/" aria-label="Energy Plastic">
+            <BrandLogo className="footer__brand-logo" surface="dark" />
+          </NavLink>
           <p>{t("footer.description")}</p>
         </div>
 

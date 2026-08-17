@@ -19,5 +19,5 @@ export const SITE_ROUTES = [
 
 export const SITE_CONTACTS = {
   phones: ["+7 701 407 2274", "+7 705 220 1028"],
-  email: "Dd_511@mail.com",
+  email: "energyplastic.kz@gmail.com",
 } as const;

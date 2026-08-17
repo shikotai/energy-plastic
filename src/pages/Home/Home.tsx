@@ -239,12 +239,12 @@ const Home = () => {
 
               <div className="technology-stats">
                 <div>
-                  <strong>120°C</strong>
+                  <strong>{t("home.technology.stat1Value")}</strong>
                   <span>{t("home.technology.stat1Label")}</span>
                 </div>
 
                 <div>
-                  <strong>TRL 6</strong>
+                  <strong>{t("home.technology.stat2Value")}</strong>
                   <span>{t("home.technology.stat2Label")}</span>
                 </div>
               </div>
