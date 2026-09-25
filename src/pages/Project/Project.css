@@ -1,121 +1,637 @@
+/* ============================================= */
+/* PROJECT HERO                                  */
+/* ============================================= */
+
+.project-hero {
+  padding: 155px 0 95px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7fbf8 100%
+    );
+}
+
+
+.project-hero__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(400px, 0.9fr);
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* Hero title */
+
+.project-hero__content h1 {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-size:
+    clamp(
+      42px,
+      4.7vw,
+      68px
+    );
+
+  line-height: 1.02;
+
+  letter-spacing: -0.045em;
+}
+
+
+/* Hero description */
+
+.project-hero__content p {
+  max-width: 670px;
+
+  margin: 28px 0 0;
+
+  color: var(--ep-muted);
+
+  font-size:
+    clamp(
+      15px,
+      1.4vw,
+      18px
+    );
+
+  line-height: 1.75;
+}
+
+
+/* ============================================= */
+/* VIDEO BLOCK                                   */
+/* ============================================= */
+
+.project-hero__media {
+  position: relative;
+
+  min-height: 390px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(20, 120, 70, 0.14);
+
+  border-radius: 34px;
+
+  background: #dcefe3;
+
+  box-shadow:
+    0 25px 60px
+    rgba(17, 91, 53, 0.08);
+
+  isolation: isolate;
+}
+
+
+/* Actual video */
+
+.project-hero__video {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* Green tint */
+
+.project-hero__overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(5, 62, 39, 0.05),
+      rgba(35, 166, 102, 0.13)
+    );
+}
+
+
+/* Technical grid over video */
+
+.project-hero__gridlines {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+  opacity: 0.25;
+
+  background-image:
+
+    linear-gradient(
+      rgba(255,255,255,.18) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.18) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    42px 42px;
+
+  mask-image:
+    linear-gradient(
+      145deg,
+      rgba(0,0,0,.75),
+      transparent 85%
+    );
+}
+
+
+/* ENERGY PLASTIC caption */
+
+.project-hero__label {
+  position: absolute;
+
+  z-index: 3;
+
+  right: 28px;
+
+  bottom: 24px;
+
+  padding:
+    7px 11px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.82
+    );
+
+  color:
+    var(--ep-green-800);
+
+  backdrop-filter:
+    blur(8px);
+
+  font-size: 10px;
+
+  font-weight: 850;
+
+  letter-spacing: 0.15em;
+}
+
+
+/* ============================================= */
+/* PROJECT SUMMARY                               */
+/* ============================================= */
+
 .project-summary .info-card {
   min-height: 310px;
 }
+
+
+/* ============================================= */
+/* FUNDING                                       */
+/* ============================================= */
 
 .project-funding-grid {
   gap: 48px;
 }
 
+
 .project-funding-list {
   margin-top: 28px;
+
   display: grid;
+
   gap: 14px;
 }
 
+
 .project-funding-item {
-  padding: 16px 18px;
-  border: 1px solid var(--ep-line);
-  border-radius: 18px;
-  background: #fff;
+  padding:
+    16px
+    18px;
+
+  border:
+    1px solid
+    var(--ep-line);
+
+  border-radius:
+    18px;
+
+  background:
+    #fff;
 }
+
 
 .project-funding-item span,
 .project-funding-item strong {
   display: block;
 }
 
+
 .project-funding-item span {
   margin-bottom: 6px;
-  color: var(--ep-green-700);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+
+  color:
+    var(--ep-green-700);
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.08em;
+
+  text-transform:
+    uppercase;
 }
 
+
 .project-funding-item strong {
-  color: #203128;
-  font-size: 16px;
-  line-height: 1.5;
+  color:
+    #203128;
+
+  font-size:
+    16px;
+
+  line-height:
+    1.5;
 }
+
+
+/* Science Fund card */
 
 .project-funding-card {
   min-height: 100%;
-  padding: 30px;
-  border: 1px solid var(--ep-line);
-  border-radius: 28px;
-  background: #fff;
-  box-shadow: 0 20px 50px rgba(17, 75, 48, 0.08);
+
+  padding:
+    30px;
+
+  border:
+    1px solid
+    var(--ep-line);
+
+  border-radius:
+    28px;
+
+  background:
+    #fff;
+
+  box-shadow:
+    0 20px 50px
+    rgba(
+      17,
+      75,
+      48,
+      0.08
+    );
 }
+
 
 .project-funding-card__eyebrow {
-  margin-bottom: 20px;
-  color: var(--ep-green-700);
-  font-size: 11px;
-  font-weight: 850;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  margin-bottom:
+    20px;
+
+  color:
+    var(--ep-green-700);
+
+  font-size:
+    11px;
+
+  font-weight:
+    850;
+
+  letter-spacing:
+    0.16em;
+
+  text-transform:
+    uppercase;
 }
+
 
 .project-funding-card__logo {
-  display: block;
-  width: min(100%, 280px);
-  margin: 0 auto 26px;
-  object-fit: contain;
+  display:
+    block;
+
+  width:
+    min(
+      100%,
+      280px
+    );
+
+  margin:
+    0 auto 26px;
+
+  object-fit:
+    contain;
 }
+
 
 .project-funding-card h3 {
-  margin: 0 0 12px;
-  font-size: 28px;
-  letter-spacing: -0.035em;
+  margin:
+    0 0 12px;
+
+  font-size:
+    28px;
+
+  letter-spacing:
+    -0.035em;
 }
+
 
 .project-funding-card p {
-  margin: 0;
-  color: var(--ep-muted);
-  line-height: 1.7;
+  margin:
+    0;
+
+  color:
+    var(--ep-muted);
+
+  line-height:
+    1.7;
 }
+
+
+/* ============================================= */
+/* MARKET                                        */
+/* ============================================= */
 
 .project-market-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
 }
+
+
+.project-market-grid
+.stat-card {
+  min-width:
+    0;
+}
+
+
+/* ============================================= */
+/* BUSINESS CHANNELS                             */
+/* ============================================= */
 
 .project-channel-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    16px;
 }
 
-.project-channel-grid .stat-card,
-.project-market-grid .stat-card {
-  min-width: 0;
+
+.project-channel-grid
+.stat-card {
+  min-width:
+    0;
 }
 
-.content-section--dark .project-channel-grid .stat-card span {
-  color: #68766e;
+
+.content-section--dark
+.project-channel-grid
+.stat-card
+span {
+  color:
+    #68766e;
 }
 
-@media (max-width: 1050px) {
-  .project-channel-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+/* ============================================= */
+/* LAPTOP                                        */
+/* ============================================= */
+
+@media
+(max-width: 1050px) {
+
+  .project-hero__grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(
+        360px,
+        0.85fr
+      );
+
+    gap:
+      45px;
   }
+
+
+  .project-hero__content h1 {
+    font-size:
+      clamp(
+        40px,
+        4.8vw,
+        60px
+      );
+  }
+
+
+  .project-channel-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
 }
 
-@media (max-width: 760px) {
+
+/* ============================================= */
+/* TABLET                                        */
+/* ============================================= */
+
+@media
+(max-width: 860px) {
+
+  .project-hero {
+    padding:
+      125px
+      0
+      75px;
+  }
+
+
+  .project-hero__grid {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      42px;
+  }
+
+
+  .project-hero__content h1 {
+    max-width:
+      760px;
+
+    font-size:
+      clamp(
+        36px,
+        7vw,
+        52px
+      );
+
+    line-height:
+      1.04;
+  }
+
+
+  .project-hero__media {
+    min-height:
+      340px;
+  }
+
+}
+
+
+/* ============================================= */
+/* MOBILE                                        */
+/* ============================================= */
+
+@media
+(max-width: 760px) {
+
   .project-market-grid,
   .project-channel-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:
+      1fr;
   }
 
-  .project-summary .info-card {
-    min-height: 0;
+
+  .project-summary
+  .info-card {
+    min-height:
+      0;
   }
+
 
   .project-funding-card {
-    padding: 24px;
+    padding:
+      24px;
   }
 
+
   .project-funding-card h3 {
-    font-size: 24px;
+    font-size:
+      24px;
   }
+
+}
+
+
+@media
+(max-width: 560px) {
+
+  .project-hero {
+    padding:
+      110px
+      0
+      60px;
+  }
+
+
+  .project-hero__content h1 {
+    font-size:
+      clamp(
+        32px,
+        9vw,
+        42px
+      );
+
+    line-height:
+      1.07;
+  }
+
+
+  .project-hero__content p {
+    margin-top:
+      20px;
+
+    font-size:
+      15px;
+  }
+
+
+  .project-hero__media {
+    min-height:
+      260px;
+
+    border-radius:
+      26px;
+  }
+
+
+  .project-hero__gridlines {
+    background-size:
+      32px
+      32px;
+  }
+
+
+  .project-hero__label {
+    right:
+      18px;
+
+    bottom:
+      16px;
+
+    font-size:
+      9px;
+  }
+
 }
