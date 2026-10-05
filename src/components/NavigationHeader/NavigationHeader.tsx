@@ -71,7 +71,7 @@ const NavigationHeader = () => {
       <div className="site-header__inner">
         <div className="header-brands">
           <NavLink
-            className="brand"
+            className="header-brand-block"
             to="/"
             onClick={() => setMenuOpen(false)}
             aria-label="Energy Plastic"
@@ -80,27 +80,34 @@ const NavigationHeader = () => {
               className="brand__logo"
               surface="light"
             />
+
+            <span className="header-brand-label">
+              {t("nav.energyPlastic")}
+            </span>
           </NavLink>
 
-          <div className="science-fund-logo">
-            <span
-              className="science-fund-logo__divider"
-              aria-hidden="true"
+          <span
+            className="header-brand-divider"
+            aria-hidden="true"
+          />
+
+          <a
+            href="https://science-fund.kz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header-brand-block header-brand-block--science"
+            aria-label="Science Fund"
+          >
+            <img
+              className="science-fund-logo__image"
+              src={scienceFundLogo}
+              alt=""
             />
 
-            <a
-              href="https://science-fund.kz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="science-fund-logo__link"
-              aria-label="Science Fund"
-            >
-              <img
-                src={scienceFundLogo}
-                alt="Science Fund"
-              />
-            </a>
-          </div>
+            <span className="header-brand-label">
+              {t("nav.scienceFund")}
+            </span>
+          </a>
         </div>
 
         <nav

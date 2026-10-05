@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: space-between;
 
-  gap: 30px;
+  gap: 28px;
 }
 
 /* ============================= */
@@ -47,75 +47,163 @@
 .header-brands {
   display: flex;
   align-items: center;
-
   gap: 18px;
-
   flex-shrink: 0;
 }
 
-.brand {
-  flex-shrink: 0;
-
-  display: inline-flex;
+.header-brand-block {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+
+  gap: 4px;
+
+  flex-shrink: 0;
 
   color: #0b4f34;
-
   text-decoration: none;
+
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
 }
 
+.header-brand-block:hover {
+  opacity: 0.84;
+  transform: translateY(-1px);
+}
+
+/* same visual area for both logos */
+.header-brand-block::before {
+  content: "";
+  display: none;
+}
+
+/* logo container height */
+.brand__logo,
+.science-fund-logo__image {
+  width: 72px;
+  height: 56px;
+
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/* Energy Plastic logo */
 .brand__logo {
-  height: 54px;
+  width: 74px;
+  height: 44px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .brand__logo img {
   display: block;
 
-  height: 100%;
+  max-width: 100%;
+  max-height: 40px;
+
   width: auto;
+  height: auto;
+
+  object-fit: contain;
 }
 
-/* ============================= */
-/* SCIENCE FUND                  */
-/* ============================= */
+/* Science Fund logo */
+.science-fund-logo__image {
+  width: 72px;
+  height: 56px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 
-.science-fund-logo {
+/* text under both logos */
+.header-brand-label {
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  gap: 18px;
+  width: 100%;
+  min-height: 12px;
+
+  margin: 0;
+
+  color: #315346;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.02em;
+
+  text-align: center;
+  white-space: nowrap;
 }
 
-.science-fund-logo__divider {
+/* divider */
+.header-brand-divider {
   display: block;
 
   width: 1px;
-  height: 38px;
+  height: 48px;
 
   flex-shrink: 0;
 
   background: #dce9e1;
 }
 
-.science-fund-logo__link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
+/* ============================= */
+/* ENERGY PLASTIC LOGO           */
+/* ============================= */
+
+.brand__logo {
+  height: 44px;
 }
 
-.science-fund-logo__link img {
+.brand__logo img {
   display: block;
+
   width: auto;
-  height: 42px;
+  height: 100%;
+
   object-fit: contain;
-  transition:
-    opacity 160ms ease,
-    transform 160ms ease;
 }
 
-.science-fund-logo__link:hover img {
-  opacity: 0.82;
-  transform: translateY(-1px);
+/* ============================= */
+/* DIVIDER                       */
+/* ============================= */
+
+.header-brand-divider {
+  display: block;
+
+  width: 1px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  background: #dce9e1;
+}
+
+/* ============================= */
+/* SCIENCE FUND LOGO             */
+/* ============================= */
+
+.header-brand-block--science {
+  min-width: 74px;
+}
+
+.science-fund-logo__image {
+  display: block;
+
+  width: auto;
+  height: 35px;
+
+  object-fit: contain;
 }
 
 /* ============================= */
@@ -260,34 +348,12 @@
 }
 
 /* ============================= */
-/* <= 1000px                     */
+/* <= 1100px                     */
 /* ============================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .site-header__inner {
-    width: min(100% - 32px, 1180px);
-
-    gap: 20px;
-  }
-
-  .header-brands {
-    gap: 12px;
-  }
-
-  .brand__logo {
-    height: 50px;
-  }
-
-  .science-fund-logo {
-    gap: 12px;
-  }
-
-  .science-fund-logo img {
-    height: 36px;
-  }
-
-  .science-fund-logo__divider {
-    height: 32px;
+    gap: 18px;
   }
 
   .main-nav {
@@ -296,6 +362,64 @@
 
   .main-nav > a {
     font-size: 13px;
+  }
+
+  .header-brands {
+    gap: 13px;
+  }
+
+  .brand__logo {
+    height: 40px;
+  }
+
+  .science-fund-logo__image {
+    height: 32px;
+  }
+
+  .header-brand-divider {
+    height: 44px;
+  }
+
+  .header-brand-label {
+    font-size: 8px;
+  }
+}
+
+/* ============================= */
+/* <= 1000px                     */
+/* ============================= */
+
+@media (max-width: 1000px) {
+  .site-header__inner {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .main-nav {
+    gap: 14px;
+  }
+
+  .header-brands {
+    gap: 10px;
+  }
+
+  .header-brand-block {
+    gap: 3px;
+  }
+
+  .brand__logo {
+    height: 37px;
+  }
+
+  .science-fund-logo__image {
+    height: 29px;
+  }
+
+  .header-brand-divider {
+    height: 40px;
+  }
+
+  .header-brand-label {
+    font-size: 7.5px;
   }
 }
 
@@ -308,16 +432,24 @@
     min-height: 74px;
   }
 
+  .header-brands {
+    gap: 12px;
+  }
+
   .brand__logo {
-    height: 46px;
+    height: 39px;
   }
 
-  .science-fund-logo img {
-    height: 34px;
-  }
-
-  .science-fund-logo__divider {
+  .science-fund-logo__image {
     height: 30px;
+  }
+
+  .header-brand-divider {
+    height: 42px;
+  }
+
+  .header-brand-label {
+    font-size: 8px;
   }
 
   .site-header__actions > .language-switcher {
@@ -399,27 +531,31 @@
   .site-header__inner {
     width: calc(100% - 24px);
 
-    gap: 12px;
+    gap: 10px;
   }
 
   .header-brands {
-    gap: 9px;
+    gap: 8px;
+  }
+
+  .header-brand-block {
+    gap: 2px;
   }
 
   .brand__logo {
-    height: 40px;
+    height: 34px;
   }
 
-  .science-fund-logo {
-    gap: 9px;
+  .science-fund-logo__image {
+    height: 26px;
   }
 
-  .science-fund-logo img {
-    height: 30px;
+  .header-brand-divider {
+    height: 35px;
   }
 
-  .science-fund-logo__divider {
-    height: 28px;
+  .header-brand-label {
+    font-size: 7px;
   }
 
   .menu-button {
@@ -428,24 +564,28 @@
   }
 }
 
+/* ============================= */
+/* VERY SMALL MOBILE             */
+/* ============================= */
+
 @media (max-width: 400px) {
-  .brand__logo {
-    height: 36px;
-  }
-
-  .science-fund-logo img {
-    height: 26px;
-  }
-
-  .science-fund-logo__divider {
-    height: 24px;
-  }
-
   .header-brands {
     gap: 7px;
   }
 
-  .science-fund-logo {
-    gap: 7px;
+  .brand__logo {
+    height: 31px;
+  }
+
+  .science-fund-logo__image {
+    height: 24px;
+  }
+
+  .header-brand-divider {
+    height: 31px;
+  }
+
+  .header-brand-label {
+    display: none;
   }
 }

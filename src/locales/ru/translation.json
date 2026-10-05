@@ -1,16 +1,18 @@
 {
   "nav": {
-    "home": "Главная",
-    "about": "О компании",
-    "technology": "Технология",
-    "solutions": "Решения",
-    "project": "Проект",
-    "team": "Команда",
-    "news": "Новости",
-    "contacts": "Контакты",
-    "openMenu": "Открыть меню",
-    "closeMenu": "Закрыть меню"
-  },
+  "home": "Главная",
+  "about": "О компании",
+  "technology": "Технология",
+  "solutions": "Решения",
+  "project": "Проект",
+  "team": "Команда",
+  "news": "Новости",
+  "contacts": "Контакты",
+  "energyPlastic": "Energy Plastic",
+  "scienceFund": "Фонд Науки",
+  "openMenu": "Открыть меню",
+  "closeMenu": "Закрыть меню"
+},
   "home": {
     "hero": {
       "eyebrow": "МАТЕРИАЛЫ • БЕЗОПАСНОСТЬ • ТЕХНОЛОГИИ",

@@ -9,7 +9,9 @@
     "news": "News",
     "contacts": "Contacts",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "energyPlastic": "Energy Plastic",
+    "scienceFund": "Science Fund"
   },
   "home": {
     "hero": {
