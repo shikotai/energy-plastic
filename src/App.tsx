@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Analytics from "./components/Analytics/Analytics";
 import SiteLayout from "./components/Layout/SiteLayout";
+import PageSEO from "./components/SEO/PageSEO";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
@@ -18,6 +20,8 @@ const basename = configuredBase || undefined;
 const App = () => (
   <BrowserRouter basename={basename}>
     <ScrollToTop />
+    <PageSEO />
+    <Analytics />
     <Routes>
       <Route element={<SiteLayout />}>
         <Route index element={<Home />} />

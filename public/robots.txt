@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Run "npm run seo:generate -- --site=https://your-domain.kz"
+# before production deployment to add the Sitemap URL.
