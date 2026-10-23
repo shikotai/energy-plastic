@@ -34,18 +34,22 @@ RU themes:
 
 ## Technology `/technology`
 
-Primary intent: microencapsulation and flame-retardant technology.
+Primary intent: fire-resistant polymer compounds for cable manufacturing.
 
 RU themes:
-- микроинкапсулированные огнезащитные добавки
-- микрокапсулы для полимерных композиций
-- огнезащитные добавки для кабеля
-- термостойкие полимерные композиции
+- огнестойкие полимерные композиции для кабеля
+- разработка компаундов для кабельной продукции
+- полимерные материалы для изоляции кабеля
+- испытания пожарной безопасности кабельных материалов
 
 EN themes:
-- microencapsulated flame-retardant additives
-- microcapsules for polymer compounds
-- flame-retardant cable technology
+- fire-resistant polymer compounds
+- cable insulation and sheathing materials
+- flame-retardant cable materials
+
+KK themes:
+- кабельге арналған отқа төзімді полимерлік композициялар
+- кабель оқшаулағышына арналған материалдар
 
 ## Solutions `/solutions`
 

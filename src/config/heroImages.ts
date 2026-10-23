@@ -24,10 +24,10 @@ export const HERO_IMAGES: Record<
     credit: "Polina Tankilevitch / Pexels",
   },
   technology: {
-    src: "https://images.pexels.com/photos/6129873/pexels-photo-6129873.jpeg?auto=compress&cs=tinysrgb&w=1400&h=950&fit=crop",
+    src: "https://images.pexels.com/photos/9754820/pexels-photo-9754820.jpeg?auto=compress&cs=tinysrgb&w=1400&h=950&fit=crop",
     objectPosition: "center",
-    sourcePage: "https://www.pexels.com/photo/close-up-photo-of-laboratory-glass-samples-6129873/",
-    credit: "RDNE Stock project / Pexels",
+    sourcePage: "https://www.pexels.com/photo/close-up-shot-of-black-wires-9754820/",
+    credit: "Jonathan Cooper / Pexels",
   },
   solutions: {
     src: "https://images.pexels.com/photos/12951628/pexels-photo-12951628.jpeg?auto=compress&cs=tinysrgb&w=1400&h=950&fit=crop",

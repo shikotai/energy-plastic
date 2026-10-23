@@ -170,24 +170,6 @@
   bottom: 51px;
 }
 
-.capsule {
-  position: absolute;
-  z-index: 4;
-  width: 18px;
-  height: 18px;
-  border: 4px solid rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  background: #41b978;
-  box-shadow: 0 5px 14px rgba(10, 105, 58, 0.18);
-}
-
-.capsule--1 { top: 116px; right: 89px; width: 14px; height: 14px; }
-.capsule--2 { top: 194px; left: 63px; }
-.capsule--3 { top: 315px; right: 42px; width: 24px; height: 24px; }
-.capsule--4 { bottom: 91px; left: 94px; width: 11px; height: 11px; }
-.capsule--5 { top: 72px; right: 202px; width: 10px; height: 10px; }
-.capsule--6 { bottom: 164px; right: 147px; width: 13px; height: 13px; }
-
 .cable-model {
   position: absolute;
   top: 176px;
@@ -396,46 +378,52 @@
   overflow: hidden;
 }
 
-.micro-field span {
+/* Stylized cable cross-section for the polymer-compound section. */
+.material-structure {
   position: absolute;
-  width: calc(4px + (var(--i) % 5) * 2px);
-  height: calc(4px + (var(--i) % 5) * 2px);
-  left: calc(7% + (var(--i) * 17) % 84 * 1%);
-  top: calc(7% + (var(--i) * 29) % 84 * 1%);
-  border-radius: 50%;
-  background: rgba(139, 217, 173, 0.33);
-  box-shadow: 0 0 16px rgba(126, 228, 168, 0.25);
-}
-
-.technology__capsule {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 235px;
-  height: 235px;
-  padding: 23px;
+  inset: 0;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 50%;
-  background:
-    linear-gradient(145deg, rgba(146, 233, 182, 0.23), rgba(52, 160, 100, 0.1));
-  box-shadow:
-    0 0 0 45px rgba(105, 214, 151, 0.025),
-    0 0 0 92px rgba(105, 214, 151, 0.018);
-  transform: translate(-50%, -50%);
 }
 
-.technology__capsule-core {
+.material-structure__outer {
+  width: min(62%, 320px);
+  aspect-ratio: 1;
+  padding: 12%;
+  display: grid;
+  place-items: center;
+  border: 2px solid rgba(193, 241, 206, 0.55);
+  border-radius: 50%;
+  background: linear-gradient(140deg, #409e67 0%, #0e653e 75%);
+  box-shadow: 0 0 0 38px rgba(120, 228, 169, 0.04),
+    0 0 0 76px rgba(120, 228, 169, 0.025),
+    inset -18px -25px 38px rgba(5, 47, 32, 0.33),
+    0 24px 65px rgba(0, 0, 0, 0.18);
+}
+
+.material-structure__insulation {
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 17%;
+  border: 8px solid #c6e7d0;
+  border-radius: 50%;
+  background: #173f32;
+  box-shadow: inset 0 6px 16px rgba(0, 0, 0, 0.32);
+}
+
+.material-structure__cores {
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.material-structure__cores span {
+  border: 5px solid #c8e0d0;
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 38% 31%, #a7e4c0 0 7%, transparent 8%),
-    radial-gradient(circle at 58% 57%, #68cd93 0 5%, transparent 6%),
-    radial-gradient(circle at 30% 70%, #44ad73 0 4%, transparent 5%),
-    linear-gradient(145deg, #56bf82, #147248);
-  box-shadow: inset -18px -18px 35px rgba(4, 68, 39, 0.28);
+  background: repeating-radial-gradient(circle, #d9ad6e 0 3px, #aa713c 3px 5px);
+  box-shadow: inset 2px 2px 6px rgba(35, 29, 18, 0.24);
 }
 
 .technology__annotation {
@@ -1110,11 +1098,6 @@
 
   .technology__visual {
     min-height: 420px;
-  }
-
-  .technology__capsule {
-    width: 180px;
-    height: 180px;
   }
 
   .technology__annotation--a {

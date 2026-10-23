@@ -20,11 +20,11 @@
       "text": "Energy Plastic develops fire-resistant compositions and technology solutions for cable products with reduced smoke and gas emissions.",
       "primary": "Our technology",
       "secondary": "About the project",
-      "badge1": "TRL 6",
+      "badge1": "2026–2028",
       "badge2": "LSLTx",
       "badge3": "Kazakhstan",
       "badgeLabels": {
-        "trl": "technology readiness",
+        "trl": "project period",
         "thermal": "cable solution",
         "local": "local development"
       }
@@ -50,31 +50,31 @@
     },
     "technology": {
       "eyebrow": "TECHNOLOGY",
-      "title": "Microencapsulated flame-retardant additives",
-      "text": "The project is based on functional microcapsules integrated into polymer compositions for cable materials. The approach is intended to improve thermal stability and resistance to combustion.",
+      "title": "Fire-resistant polymer compounds for cables",
+      "text": "The project develops polymer compounds for cable insulation and sheathing. The focus is on meeting fire-safety requirements and preparing materials for manufacturing.",
       "steps": {
         "one": {
           "number": "01",
-          "title": "Microcapsule",
-          "text": "A functional flame-retardant additive enclosed in a stable shell."
+          "title": "Material selection",
+          "text": "Selecting components and assessing their compatibility."
         },
         "two": {
           "number": "02",
-          "title": "Polymer composition",
-          "text": "Integration of additives into insulation and sheath materials."
+          "title": "Polymer compound",
+          "text": "Developing formulations for cable insulation and sheathing."
         },
         "three": {
           "number": "03",
-          "title": "Cable solution",
-          "text": "Application of the technology in products with increased fire-safety requirements."
+          "title": "Cable products",
+          "text": "Preparing and evaluating samples for cable manufacturing."
         }
       },
       "stat1Label": "target cable solution",
-      "stat2Label": "current technology readiness level",
-      "shellLabel": "shell",
-      "coreLabel": "active component",
+      "stat2Label": "project implementation period",
+      "shellLabel": "sheathing compound",
+      "coreLabel": "cable conductors",
       "stat1Value": "LSLTx",
-      "stat2Value": "TRL 6"
+      "stat2Value": "2026–2028"
     },
     "solution": {
       "eyebrow": "FLAGSHIP SOLUTION",
@@ -83,7 +83,7 @@
       "features": {
         "one": "Reduced smoke and gas emissions",
         "two": "Resistance to flame propagation",
-        "three": "Microencapsulated flame-retardant components",
+        "three": "Development of domestic cable compounds",
         "four": "Focus on local production"
       },
       "note": "Technical specifications and certification status will be refined as pilot-industrial testing progresses."
@@ -184,11 +184,11 @@
     "focus": {
       "eyebrow": "FOCUS",
       "title": "From the laboratory to serial production",
-      "text": "The project has reached TRL 6 and is preparing for the next stage: pilot-industrial testing, certification and production scale-up.",
+      "text": "Work planned for 2026–2028 includes polymer-compound development, pilot-industrial testing, conformity assessment and production launch.",
       "stats": [
         {
-          "value": "TRL 6",
-          "label": "current technology readiness level"
+          "value": "2026–2028",
+          "label": "project implementation period"
         },
         {
           "value": "R&D",
@@ -204,45 +204,45 @@
   "technology": {
     "hero": {
       "eyebrow": "TECHNOLOGY",
-      "title": "Microcapsules as a functional element of flame protection",
-      "text": "The developed approach uses microencapsulated flame-retardant additives to influence polymer-material behavior during heating and combustion."
+      "title": "Development of fire-resistant compounds for cable products",
+      "text": "The project focuses on developing and applying polymer compounds for cable products with increased fire-safety requirements, including resistance to flame spread and reduced smoke generation."
     },
     "how": {
       "eyebrow": "PRINCIPLE",
-      "title": "How the technology works",
+      "title": "How the cable compound is developed",
       "steps": [
         {
-          "title": "Microcapsule formation",
-          "text": "Creating a functional core and protective shell with controlled morphology."
+          "title": "Component selection",
+          "text": "Selecting the polymer base and functional additives based on cable-material requirements."
         },
         {
-          "title": "Stabilization",
-          "text": "UF and PMMA shells preserve the functional component and improve thermal stability."
+          "title": "Formulation development",
+          "text": "Defining component ratios and processing parameters for a uniform compound."
         },
         {
-          "title": "Integration",
-          "text": "Microcapsules are introduced into the polymer composition used in cable materials."
+          "title": "Sample preparation",
+          "text": "Preparing experimental materials for cable insulation and sheathing."
         },
         {
-          "title": "Testing",
-          "text": "Thermal characteristics, resistance to combustion and material stability are evaluated."
+          "title": "Property evaluation",
+          "text": "Assessing processability, thermal properties and performance in fire-safety tests."
         }
       ]
     },
     "research": {
-      "eyebrow": "R&D RESULTS",
-      "title": "Validated development results",
-      "panel": "The technology is at the laboratory validation stage and is being prepared for the next scaling phase.",
+      "eyebrow": "R&D PRIORITIES",
+      "title": "Key areas of development",
+      "panel": "The 2026–2028 plan covers compound development, preparation of a pilot batch and a transition toward industrial production.",
       "items": [
-        "The effectiveness of UF and PMMA shells has been experimentally confirmed.",
-        "The thermal resistance of the material has been improved.",
-        "A stable microcapsule morphology has been achieved.",
-        "Self-extinguishing behavior was observed during combustion tests.",
-        "Prototype samples were created and laboratory tests were completed.",
-        "A patent application has been prepared."
+        "Selecting components for fire-resistant polymer compounds.",
+        "Developing formulations and checking material compatibility.",
+        "Preparing experimental and pilot samples.",
+        "Assessing material behavior during heating and flame exposure.",
+        "Checking smoke and gas emissions and product quality.",
+        "Preparing manufacturing and conformity-assessment documentation."
       ],
-      "panelLabel": "DEVELOPMENT STATUS",
-      "panelValue": "TRL 6"
+      "panelLabel": "PROJECT PERIOD",
+      "panelValue": "2026–2028"
     },
     "standards": {
       "eyebrow": "STANDARDS",
@@ -261,14 +261,14 @@
       },
       "stability": {
         "title": "Material stability",
-        "text": "Microcapsule morphology, thermal stability and reproducibility of properties are monitored."
+        "text": "Thermal properties, compound uniformity and reproducibility of performance are evaluated."
       }
     },
     "monitoring": {
       "burnTitle": "Resistance to burning",
       "burnText": "The behavior of the material under high temperature and open-flame exposure is being studied.",
       "stabilityTitle": "Material stability",
-      "stabilityText": "Microcapsule morphology, thermal stability and reproducibility of properties are monitored."
+      "stabilityText": "Thermal properties, compound uniformity and reproducibility of performance are evaluated."
     }
   },
   "solutions": {
@@ -280,13 +280,13 @@
     "main": {
       "eyebrow": "MAIN SOLUTION",
       "title": "AVVGng(A)-LSLTx",
-      "text": "A cable solution with reduced smoke and gas emissions and resistance to flame propagation, designed to incorporate microencapsulated flame-retardant components.",
+      "text": "The project targets cable products with reduced smoke and gas emissions and resistance to flame propagation. Material formulations and properties will be refined through development and testing.",
       "panel": "The project’s flagship direction for facilities with increased fire-safety requirements.",
       "features": [
         "Enhanced fire safety",
         "Low smoke and gas emissions",
         "Self-extinguishing material behavior",
-        "Microencapsulated functional additives",
+        "Fire-resistant polymer compounds under development",
         "Focus on local production",
         "Designed for critical infrastructure"
       ]
@@ -295,7 +295,7 @@
       "eyebrow": "MATERIALS",
       "title": "Fire-resistant compositions as a standalone technology platform",
       "text": "The developed technology is considered not only as part of a single cable product, but also as a basis for adapting functional compositions to different cable-material requirements.",
-      "panel": "Microencapsulated functional additives as a technology foundation for polymer compositions."
+      "panel": "Fire-resistant polymer compounds for cable insulation and sheathing."
     },
     "use": {
       "eyebrow": "APPLICATIONS",
@@ -314,8 +314,10 @@
   "project": {
     "hero": {
       "eyebrow": "PROJECT",
-      "title": "Development and production of domestic fire-resistant compositions for cable manufacturing",
-      "text": "A commercialization project focused on developing domestic technology, preparing production capacity and moving toward industrial production."
+      "title": "Development and production of domestic cable products with enhanced fire resistance",
+      "text": "A commercialization project focused on developing domestic technology, preparing production capacity and moving toward industrial production.",
+      "irnLabel": "IRN:",
+      "irn": "DP32934801"
     },
     "goal": {
       "title": "Production and commercial sale of cable with enhanced fire safety",
@@ -408,7 +410,7 @@
     "funding": {
       "eyebrow": "FUNDING",
       "title": "Project funding and participants",
-      "text": "The project is being implemented with the support of JSC “Science Fund” under the competition for grant funding for commercialization of scientific and (or) scientific-technical activity results.",
+      "text": "The project is implemented with the support of JSC “Science Fund” under the 2026–2028 grant competition for commercialization of results of scientific and/or scientific-technical activities.",
       "logoCaption": "Funding source",
       "logoAlt": "JSC Science Fund logo",
       "sourceTitle": "JSC “Science Fund”",
@@ -423,7 +425,7 @@
           "value": "Grant funding for commercialization of scientific and (or) scientific-technical activity results"
         },
         {
-          "label": "Grant recipient",
+          "label": "Grant recipient (startup company)",
           "value": "Energy Plastic LLP"
         },
         {

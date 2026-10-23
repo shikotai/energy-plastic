@@ -46,6 +46,10 @@ const Project = () => {
               {t("project.hero.eyebrow")}
             </div>
 
+            <div className="project-hero__irn">
+              {t("project.hero.irnLabel")} <strong>{t("project.hero.irn")}</strong>
+            </div>
+
             <h1>
               {t("project.hero.title")}
             </h1>

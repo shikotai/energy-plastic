@@ -29,6 +29,20 @@
 }
 
 
+/* Project grant identifier, positioned above the main heading. */
+.project-hero__irn {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+
+  margin: 10px 0 18px;
+
+  color: var(--ep-green-700);
+  font-size: clamp(14px, 1.4vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 /* Hero title */
 
 .project-hero__content h1 {

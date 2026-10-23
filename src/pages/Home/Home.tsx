@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
-import type { CSSProperties } from "react";
 
 import { toList } from "../../utils/translation";
 
@@ -100,15 +99,8 @@ const Home = () => {
 
               <div className="hero__visual-label hero__visual-label--top">
                 <FlaskConical size={16} />
-                MICROCAPSULE TECHNOLOGY
+                FIRE-RESISTANT COMPOUNDS
               </div>
-
-              <div className="capsule capsule--1" />
-              <div className="capsule capsule--2" />
-              <div className="capsule capsule--3" />
-              <div className="capsule capsule--4" />
-              <div className="capsule capsule--5" />
-              <div className="capsule capsule--6" />
 
               <div className="cable-model">
                 <div className="cable-model__shadow" />
@@ -133,7 +125,7 @@ const Home = () => {
           <div className="hero__rail" aria-hidden="true">
             <span>POLYMER</span>
             <i />
-            <span>MICROCAPSULE</span>
+            <span>COMPOUND</span>
             <i />
             <span>CABLE</span>
             <i />
@@ -188,30 +180,23 @@ const Home = () => {
         <section className="technology section" id="technology">
           <div className="site-container technology__grid">
             <div className="technology__visual">
-              <div className="micro-field">
-                {Array.from({ length: 28 }).map((_, index) => (
-                  <span
-                    key={index}
-                    style={
-                      {
-                        "--i": index,
-                      } as CSSProperties
-                    }
-                  />
-                ))}
-              </div>
-
-              <div className="technology__capsule">
-                <span className="technology__capsule-core" />
+              <div className="material-structure" aria-hidden="true">
+                <div className="material-structure__outer">
+                  <div className="material-structure__insulation">
+                    <div className="material-structure__cores">
+                      <span /><span /><span /><span />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="technology__annotation technology__annotation--a">
-                <span>UF / PMMA</span>
+                <span>POLYMER COMPOUND</span>
                 {t("home.technology.shellLabel")}
               </div>
 
               <div className="technology__annotation technology__annotation--b">
-                <span>FUNCTIONAL CORE</span>
+                <span>CABLE CORE</span>
                 {t("home.technology.coreLabel")}
               </div>
             </div>
