@@ -111,6 +111,7 @@ const NavigationHeader = () => {
         </div>
 
         <nav
+          id="site-main-nav"
           className={`main-nav ${
             menuOpen ? "main-nav--open" : ""
           }`}
@@ -151,6 +152,8 @@ const NavigationHeader = () => {
                 ? t("nav.closeMenu")
                 : t("nav.openMenu")
             }
+            aria-expanded={menuOpen}
+            aria-controls="site-main-nav"
             onClick={() =>
               setMenuOpen((value) => !value)
             }

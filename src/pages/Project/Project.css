@@ -649,3 +649,34 @@ span {
   }
 
 }
+
+@media (max-width: 760px) {
+  .project-hero { padding: 112px 0 57px; }
+  .project-hero__grid { gap: 30px; }
+  .project-hero__content { min-width: 0; }
+  .project-hero__content h1 {
+    font-size: clamp(29px, 8.5vw, 43px);
+    line-height: 1.08;
+    letter-spacing: -.04em;
+    hyphens: auto;
+  }
+  .project-hero__content p { margin-top: 17px; font-size: 14px; line-height: 1.67; }
+  .project-hero__irn { flex-wrap: wrap; margin: 6px 0 15px; font-size: 12px; }
+  .project-hero__media { min-height: clamp(220px, 64vw, 310px); border-radius: 23px; }
+  .project-hero__label { right: 13px; bottom: 13px; font-size: 8px; }
+  .project-funding-grid { gap: 25px; }
+  .project-funding-list { margin-top: 21px; gap: 10px; }
+  .project-funding-item { padding: 14px 15px; border-radius: 15px; }
+  .project-funding-item span { font-size: 11px; letter-spacing: .04em; }
+  .project-funding-item strong { font-size: 14px; overflow-wrap: anywhere; }
+  .project-funding-card { padding: 23px; border-radius: 20px; }
+  .project-funding-card__logo { width: min(100%, 210px); margin-bottom: 18px; }
+  .project-funding-card h3 { font-size: 22px; }
+  .project-funding-card p { font-size: 14px; }
+  .project-summary .info-card { min-height: 0; }
+}
+@media (max-width: 380px) {
+  .project-hero { padding-top: 106px; }
+  .project-hero__content h1 { font-size: 28px; }
+  .project-funding-card { padding: 20px; }
+}

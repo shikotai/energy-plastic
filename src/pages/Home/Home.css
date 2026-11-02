@@ -1138,3 +1138,134 @@
     padding: 38px 27px;
   }
 }
+
+/* Purpose-built compact composition for phone screens, preserving desktop visuals. */
+@media (max-width: 760px) {
+  .hero { padding: 112px 0 0; min-height: 0; }
+  .hero__grid { gap: 14px; }
+  .hero__content { min-width: 0; }
+  .hero h1 {
+    font-size: clamp(34px, 9.4vw, 53px);
+    line-height: 1.06;
+    letter-spacing: -.046em;
+    hyphens: auto;
+  }
+  .hero__lead, .technology__lead, .solution__lead {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.68;
+  }
+  .hero__actions { margin-top: 24px; gap: 9px; }
+  .hero__badges { margin-top: 27px; gap: 12px; }
+  .hero-badge { padding-right: 6px; padding-bottom: 12px; }
+  .hero-badge strong { font-size: 15px; }
+  .hero-badge span { font-size: 10px; }
+  .hero__visual {
+    width: min(100%, 430px);
+    height: clamp(260px, 87vw, 365px);
+    margin: 0 auto;
+    transform: none;
+  }
+  .hero__visual::before { inset: 11% 3% 5% 9%; }
+  .material-orbit--outer {
+    width: 92%;
+    height: auto;
+    aspect-ratio: 1;
+    top: 1%;
+    right: 1%;
+  }
+  .material-orbit--inner {
+    width: 62%;
+    height: auto;
+    aspect-ratio: 1;
+    top: 18%;
+    right: 15%;
+  }
+  .cable-model {
+    top: 33%;
+    left: 52%;
+    transform: translateX(-50%) rotate(-24deg) scale(.75);
+    transform-origin: center top;
+  }
+  .hero__visual-label { padding: 8px 10px; font-size: 8px; letter-spacing: .06em; }
+  .hero__visual-label--top { top: 6%; left: 0; }
+  .hero__visual-label--bottom { right: 0; bottom: 6%; }
+  .hero__rail {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    white-space: normal;
+    margin-top: 0;
+    padding: 14px 18px;
+    gap: 7px 12px;
+    font-size: 9px;
+    line-height: 1.45;
+    letter-spacing: .08em;
+    text-align: center;
+  }
+  .hero__rail i { display: none; }
+  .feature-card { min-height: 0; padding: 26px 23px; }
+  .feature-card__number { top: 26px; right: 23px; }
+  .feature-card h3 { margin: 30px 0 10px; font-size: 22px; }
+  .feature-card p { font-size: 14px; }
+  .technology__grid, .solution__grid { gap: 28px; }
+  .technology__visual {
+    min-height: clamp(280px, 82vw, 390px);
+    border-radius: 24px;
+  }
+  .material-structure__outer { width: min(60%, 260px); }
+  .material-structure__insulation { border-width: 5px; }
+  .material-structure__cores span { border-width: 3px; }
+  .technology__annotation--a { top: 21px; left: 20px; }
+  .technology__annotation--b { bottom: 20px; right: 20px; }
+  .technology__annotation { font-size: 10px; }
+  .technology__annotation span { font-size: 9px; letter-spacing: .07em; }
+  .technology__lead, .solution__lead { margin-top: 16px; }
+  .technology-steps { margin-top: 27px; }
+  .technology-step { grid-template-columns: 30px minmax(0, 1fr); gap: 12px; padding: 18px 0; }
+  .technology-step h3 { font-size: 18px; }
+  .technology-step p { font-size: 14px; }
+  .technology-stats strong { font-size: 28px; }
+  .solution__content h2 { font-size: clamp(29px, 8.5vw, 43px); line-height: 1.06; hyphens: auto; }
+  .solution-feature { align-items: flex-start; font-size: 13px; }
+  .solution-feature > span { flex: 0 0 28px; }
+  .solution__note { margin-top: 26px; }
+  .solution__product {
+    min-height: clamp(295px, 83vw, 390px);
+    border-radius: 24px;
+  }
+  .product-cable {
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-23deg) scale(.67);
+  }
+  .product-caption--top { top: 20px; left: 20px; }
+  .product-caption--side { bottom: 56px; }
+  .application-card { min-height: 275px; padding: 25px; border-radius: 22px; }
+  .application-card h3 { font-size: clamp(25px, 7.2vw, 34px); line-height: 1.09; }
+  .application-card p { font-size: 14px; }
+  .roadmap-card { padding: 25px; }
+  .roadmap-card__year { margin-bottom: 25px; }
+  .roadmap-card h3 { font-size: 23px; margin-bottom: 14px; }
+  .cta { padding-bottom: 60px; }
+  .cta__box {
+    min-height: 0;
+    padding: 33px 24px;
+    gap: 25px;
+    border-radius: 23px;
+  }
+  .cta__content p { margin-top: 17px; font-size: 14px; line-height: 1.65; }
+  .cta__box > .button { align-self: flex-start; }
+}
+@media (max-width: 400px) {
+  .hero { padding-top: 106px; }
+  .hero h1 { font-size: clamp(31px, 9.5vw, 37px); }
+  .hero__visual { height: 276px; }
+  .cable-model { top: 33%; transform: translateX(-50%) rotate(-24deg) scale(.62); }
+  .product-cable { transform: translate(-50%, -50%) rotate(-23deg) scale(.55); }
+  .hero__visual-label svg { width: 13px; }
+  .hero__visual-label { gap: 5px; padding: 7px 8px; font-size: 7.5px; }
+  .technology__visual { min-height: 280px; }
+  .technology__annotation { max-width: 44%; }
+  .application-card { min-height: 260px; padding: 22px; }
+  .cta__box { padding: 29px 21px; }
+}

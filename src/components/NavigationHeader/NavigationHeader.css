@@ -427,7 +427,7 @@
 /* MOBILE NAV                    */
 /* ============================= */
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
   .site-header__inner {
     min-height: 74px;
   }
@@ -588,4 +588,26 @@
   .header-brand-label {
     display: none;
   }
+}
+
+@media (max-width: 1100px) {
+  .site-header__inner { min-width: 0; }
+  .main-nav {
+    height: calc(100dvh - 74px);
+    min-height: 0;
+    padding: 22px 24px 38px;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+  }
+  .main-nav > a { line-height: 1.25; overflow-wrap: anywhere; }
+  .header-brands { min-width: 0; }
+  .site-header__actions { flex-shrink: 0; }
+  .language-switcher--mobile { flex-shrink: 0; }
+}
+@media (max-width: 400px) {
+  .site-header__inner { min-height: 70px; }
+  .main-nav { top: 70px; height: calc(100dvh - 70px); }
+  .header-brand-block--science { min-width: 0; }
+  .header-brand-divider { height: 31px; }
+  .menu-button { flex: 0 0 40px; }
 }

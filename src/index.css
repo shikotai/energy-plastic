@@ -122,3 +122,51 @@ img { max-width: 100%; }
   .section { padding: 84px 0; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 22px; }
 }
+
+/* Responsive foundations: prevent intrinsic grid/text widths from pushing the page sideways. */
+main, section, article, aside, .site-container,
+.section-heading, .section-heading > *, .site-container > * {
+  min-width: 0;
+}
+img, video, picture, iframe { max-width: 100%; }
+img, video { height: auto; }
+h1, h2, h3, h4, p, a, strong, .section-eyebrow {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 760px) {
+  html { scroll-padding-top: 76px; }
+  .site-container { width: calc(100% - 36px); }
+  .section { padding: 64px 0; }
+  .section-heading { gap: 15px; margin-bottom: 32px; }
+  .section-heading h2 {
+    font-size: clamp(29px, 8.5vw, 43px);
+    line-height: 1.08;
+    letter-spacing: -.04em;
+    hyphens: auto;
+  }
+  .section-heading > p { font-size: 14px; line-height: 1.65; }
+  .section-eyebrow {
+    max-width: 100%;
+    margin-bottom: 15px;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: .09em;
+  }
+  .section-eyebrow > span { flex: 0 0 20px; }
+  .button {
+    max-width: 100%;
+    min-height: 46px;
+    padding: 11px 18px;
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: center;
+    white-space: normal;
+  }
+  .button svg { flex-shrink: 0; }
+}
+@media (max-width: 380px) {
+  .site-container { width: calc(100% - 28px); }
+  .section { padding: 54px 0; }
+  .section-heading h2 { font-size: clamp(27px, 8.4vw, 32px); }
+}

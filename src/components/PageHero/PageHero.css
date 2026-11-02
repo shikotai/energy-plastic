@@ -170,3 +170,24 @@
     border-radius:26px
   }
 }
+
+@media (max-width: 760px) {
+  .page-hero { padding: 112px 0 57px; }
+  .page-hero__grid { gap: 29px; }
+  .page-hero__content { min-width: 0; }
+  .page-hero__content h1 {
+    font-size: clamp(29px, 8.5vw, 43px);
+    line-height: 1.08;
+    letter-spacing: -.04em;
+    hyphens: auto;
+  }
+  .page-hero__content p { margin-top: 17px; font-size: 14px; line-height: 1.65; }
+  .page-hero__visual { min-height: clamp(215px, 63vw, 315px); border-radius: 23px; }
+  .page-hero__orb--a { width: 55%; height: auto; aspect-ratio: 1; right: 8%; top: 14%; }
+  .page-hero__orb--b { width: 12%; height: auto; aspect-ratio: 1; left: 10%; bottom: 17%; }
+  .page-hero__image-label { right: 14px; bottom: 12px; font-size: 8px; }
+}
+@media (max-width: 380px) {
+  .page-hero { padding-top: 106px; }
+  .page-hero__content h1 { font-size: 28px; }
+}
