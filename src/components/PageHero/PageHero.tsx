@@ -26,8 +26,8 @@ const PageHero = ({ eyebrow, title, text, image }: PageHeroProps) => (
               alt=""
               style={{ objectPosition: image.objectPosition || "center" }}
               loading="eager"
+              fetchPriority="high"
               decoding="async"
-              referrerPolicy="no-referrer"
             />
             <div className="page-hero__image-overlay" aria-hidden="true" />
             <div className="page-hero__image-grid" aria-hidden="true" />

@@ -5,7 +5,6 @@ import PageHero from "../../components/PageHero/PageHero";
 import SectionCTA from "../../components/SectionCTA/SectionCTA";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { Metric, TextCard } from "../../types/content";
-import "../sharedPages.css";
 import { HERO_IMAGES } from "../../config/heroImages";
 
 const About = () => {

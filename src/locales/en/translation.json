@@ -543,5 +543,47 @@
     "text": "A user-interface error occurred. Reload the site or return to the home page.",
     "reload": "Reload",
     "home": "Home"
+  },
+  "seo": {
+    "home": {
+      "title": "Fire-Resistant Compounds for Cable Products | Energy Plastic",
+      "description": "Energy Plastic develops fire-resistant polymer compounds for low-smoke, low-toxicity cables. Domestic technology from Kazakhstan."
+    },
+    "about": {
+      "title": "About: Cable Materials R&D in Kazakhstan | Energy Plastic",
+      "description": "Energy Plastic combines materials science, industrial engineering and commercialization to create domestic fire-resistant cable compounds."
+    },
+    "technology": {
+      "title": "Fire-Resistant Polymer Compounds for Cables | Energy Plastic",
+      "description": "Compounds for cable insulation and sheathing: reduced flame spread, lower smoke and gas emission, and fire-safety testing."
+    },
+    "solutions": {
+      "title": "Fire-Safe LSLTx Cable Solutions | Energy Plastic",
+      "description": "Low-smoke, low-toxicity cable products for energy, transport, public buildings and industrial facilities."
+    },
+    "project": {
+      "title": "Fire-Resistant Cable Compound Production in Kazakhstan | Energy Plastic",
+      "description": "Energy Plastic's 2026–2028 commercialization project: domestic production of fire-resistant compounds and cable products."
+    },
+    "team": {
+      "title": "Project Team | Energy Plastic",
+      "description": "Specialists in cable manufacturing, polymer materials, marketing and financial management behind the Energy Plastic project."
+    },
+    "news": {
+      "title": "Project News | Energy Plastic",
+      "description": "Energy Plastic news: fire-resistant compound technology, testing, production milestones and partnerships."
+    },
+    "contacts": {
+      "title": "Contacts | Energy Plastic",
+      "description": "Contact Energy Plastic about technology partnerships and fire-resistant cable compounds: phone and e-mail."
+    },
+    "notFound": {
+      "title": "Page Not Found | Energy Plastic",
+      "description": "The requested page could not be found."
+    }
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "backToTop": "Back to top"
   }
 }

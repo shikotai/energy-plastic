@@ -4,7 +4,7 @@ import PageHero from "../../components/PageHero/PageHero";
 import SectionCTA from "../../components/SectionCTA/SectionCTA";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { TeamMember } from "../../types/content";
-import "../sharedPages.css";
+import "./Team.css";
 import { HERO_IMAGES } from "../../config/heroImages";
 
 const getInitials = (name: string) =>
@@ -23,7 +23,9 @@ const Team = () => {
       <PageHero
         eyebrow={t("team.hero.eyebrow")}
         title={t("team.hero.title")}
-        text={t("team.hero.text")} image={HERO_IMAGES.team} />
+        text={t("team.hero.text")}
+        image={HERO_IMAGES.team}
+      />
 
       <section className="content-section">
         <div className="site-container team-grid">

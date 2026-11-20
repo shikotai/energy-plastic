@@ -25,7 +25,7 @@ Production build:
 npm run build
 ```
 
-The build script also guarantees that `dist/.htaccess` and `dist/404.html` exist for SPA routing.
+The build also generates per-page HTML, `404.html`, `sitemap.xml`, `robots.txt` and copies `.htaccess` (see `scripts/postbuild.mjs`).
 
 ## Pages
 
@@ -52,51 +52,46 @@ Russian remains the fallback language. Translation arrays are read through `useT
 
 ```text
 src/
-  components/
-    ErrorBoundary/
-    Footer/
-    Layout/
-    NavigationHeader/
-    PageHero/
-    ScrollToTop/
-    SectionCTA/
+  components/          # one folder per component: Component.tsx + Component.css
+    Analytics/         # GA4 + Yandex Metrika (SPA page views)
+    SEO/               # client-side <head> updates on navigation / language change
+    Layout/            # header, page transition, skip link, progress bar, back-to-top
+    ...
   config/
-    site.ts             # routes, language options, project contacts
+    routes.json        # public pages (menu, sitemap, per-page HTML)
+    site.ts            # languages, contacts
+    seo.ts             # site URL, OG image, helpers
+    heroImages.ts
   hooks/
+    useScrollReveal.ts # scroll-reveal animations (IntersectionObserver)
     useTranslatedList.ts
-  locales/
-    ru/
-    kk/
-    en/
-  pages/
-  types/
-    content.ts
-  utils/
-    translation.ts
+  locales/{ru,kk,en}/translation.json   # all texts, incl. `seo.*` titles/descriptions
+  pages/<Page>/        # page component + page-only CSS
+  styles/
+    base.css           # tokens, reset, layout primitives, buttons
+    content-blocks.css # blocks shared by inner pages (cards, panels, lists)
+    animations.css     # keyframes, entrances, ambient motion, reduced-motion
+scripts/
+  postbuild.mjs        # per-page HTML, 404.html, sitemap.xml, robots.txt, .htaccess
+docs/                  # SEO, semantic core, content notes
 ```
 
-## Routing / white-screen fix
+## Deploy (Plesk)
 
-The previous version kept `.htaccess` only in the project root. Vite builds do not guarantee that this file reaches `dist`, which can break direct visits, refreshes, or browser-history navigation on nested routes after Plesk deployment.
+```powershell
+npm ci
+npm run build
+```
 
-This version stores the rewrite file in `public/.htaccess` and additionally runs `scripts/ensure-spa-files.mjs` after every production build.
+Upload **the contents of `dist/`**, including the hidden `.htaccess`, to the site root (`httpdocs`).
+Production settings live in `.env.production`; see `docs/SEO-SETUP.md` for analytics and webmaster panels.
 
-When deploying to Plesk, upload the contents of `dist/`, including the hidden `.htaccess` file.
+## Animations
 
-## Content note
-
-The technical/project content is based on the provided project presentation. Contact details are kept in one place: `src/config/site.ts`.
-
-Before public launch, confirm that those project contacts are officially assigned to Energy Plastic.
-
-
-## Branding updates
-
-- Energy Plastic logo integrated into the header and footer.
-- Science Fund logo added to the Project page as the funding source.
-- Contact email updated to `energyplastic.kz@gmail.com`.
-
+All motion is CSS (`src/styles/animations.css`) plus a small IntersectionObserver hook for scroll reveal.
+Content stays visible without JavaScript, and everything is disabled for visitors with
+"reduce motion" enabled in their OS.
 
 ## Hero photography
 
-Page hero images are configured in `src/config/heroImages.ts`. Source/credit references are listed in `HERO-IMAGE-SOURCES.md`.
+Page hero images are configured in `src/config/heroImages.ts`. Source/credit references are listed in `docs/HERO-IMAGE-SOURCES.md`.

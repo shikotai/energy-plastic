@@ -1,0 +1,90 @@
+#main-content:focus { outline: none; }
+
+/* Keyboard users: jump straight to the page content. */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--ep-green-900);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform 200ms var(--ep-ease);
+}
+.skip-link:focus { transform: translateY(0); }
+
+/* Reading progress bar (pure CSS, only where scroll-driven animations are supported). */
+.scroll-progress { display: none; }
+
+@supports (animation-timeline: scroll()) {
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ep-green-500), var(--ep-green-800));
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    pointer-events: none;
+    animation: ep-scroll-progress linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+
+@keyframes ep-scroll-progress {
+  to { transform: scaleX(1); }
+}
+
+/* Back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 90;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ep-green-800);
+  color: #fff;
+  box-shadow: 0 14px 30px rgba(7, 60, 41, .28);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px) scale(.9);
+  transition:
+    opacity 260ms ease,
+    transform 320ms var(--ep-ease-spring),
+    visibility 0s linear 260ms,
+    background 180ms ease;
+}
+.back-to-top--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 260ms ease,
+    transform 320ms var(--ep-ease-spring),
+    visibility 0s,
+    background 180ms ease;
+}
+.back-to-top:hover { background: var(--ep-green-950); }
+.back-to-top:hover svg { animation: ep-nudge-up 600ms var(--ep-ease) infinite alternate; }
+
+@keyframes ep-nudge-up {
+  to { transform: translateY(-3px); }
+}
+
+@media (max-width: 760px) {
+  .back-to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+}

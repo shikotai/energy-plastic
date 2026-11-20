@@ -5,7 +5,6 @@ import PageHero from "../../components/PageHero/PageHero";
 import SectionCTA from "../../components/SectionCTA/SectionCTA";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { TextCard } from "../../types/content";
-import "../sharedPages.css";
 import { HERO_IMAGES } from "../../config/heroImages";
 
 const Technology = () => {
@@ -29,12 +28,12 @@ const Technology = () => {
 
           <div className="process-list">
             {steps.map((step, index) => {
-              const Icon = icons[index];
+              const Icon = icons[index] ?? FlaskConical;
               return (
                 <article className="process-item" key={step.title}>
                   <div className="process-item__number">{String(index + 1).padStart(2, "0")}</div>
                   <div>
-                    <Icon size={21} color="#138552" />
+                    <Icon className="process-item__icon" size={21} aria-hidden="true" />
                     <h3>{step.title}</h3>
                     <p>{step.text}</p>
                   </div>
@@ -60,7 +59,7 @@ const Technology = () => {
               {research.map((item) => (
                 <li key={item}>
                   <span className="check-list__icon"><Check size={14} /></span>
-                  <span style={{ color: "rgba(255,255,255,.72)" }}>{item}</span>
+                  <span className="text-on-dark">{item}</span>
                 </li>
               ))}
             </ul>
@@ -77,7 +76,7 @@ const Technology = () => {
             <div className="chips">{standards.map((label) => <span className="chip" key={label}>{label}</span>)}</div>
           </div>
 
-          <div className="cards-3" style={{ gridTemplateColumns: "1fr" }}>
+          <div className="cards-3 cards-3--single">
             <article className="info-card">
               <div className="info-card__icon"><Flame size={24} /></div>
               <h3>{t("technology.monitoring.burnTitle")}</h3>

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import PageHero from "../../components/PageHero/PageHero";
 import { SITE_CONTACTS } from "../../config/site";
-import "../sharedPages.css";
+import "./Contacts.css";
 import { HERO_IMAGES } from "../../config/heroImages";
 
 const Contacts = () => {
@@ -14,7 +14,9 @@ const Contacts = () => {
       <PageHero
         eyebrow={t("contacts.hero.eyebrow")}
         title={t("contacts.hero.title")}
-        text={t("contacts.hero.text")} image={HERO_IMAGES.contacts} />
+        text={t("contacts.hero.text")}
+        image={HERO_IMAGES.contacts}
+      />
 
       <section className="content-section">
         <div className="site-container">
@@ -57,7 +59,7 @@ const Contacts = () => {
           </div>
 
           <div className="dark-panel">
-            <UsersRound size={34} color="#9de0b8" />
+            <UsersRound className="dark-panel__icon" size={34} aria-hidden="true" />
             <div className="dark-panel__big dark-panel__big--medium">B2B + R&amp;D</div>
             <p>{t("contacts.cooperation.panel")}</p>
           </div>

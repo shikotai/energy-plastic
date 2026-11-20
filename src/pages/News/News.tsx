@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import PageHero from "../../components/PageHero/PageHero";
 import { useTranslatedList } from "../../hooks/useTranslatedList";
 import type { NewsItem } from "../../types/content";
-import "../sharedPages.css";
+import "./News.css";
 import { HERO_IMAGES } from "../../config/heroImages";
 
 const News = () => {
@@ -17,7 +17,9 @@ const News = () => {
       <PageHero
         eyebrow={t("news.hero.eyebrow")}
         title={t("news.hero.title")}
-        text={t("news.hero.text")} image={HERO_IMAGES.news} />
+        text={t("news.hero.text")}
+        image={HERO_IMAGES.news}
+      />
 
       <section className="content-section">
         <div className="site-container">
@@ -55,8 +57,8 @@ const News = () => {
                 <div className="info-card__icon">
                   <CalendarDays size={24} />
                 </div>
-                <span className="team-card__role">{item.year}</span>
-                <h3 className="news-card-title">{item.title}</h3>
+                <span className="info-card__meta">{item.year}</span>
+                <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
             ))}

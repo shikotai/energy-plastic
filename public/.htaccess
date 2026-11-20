@@ -1,10 +1,60 @@
+# Energy Plastic — Apache / Plesk configuration.
+# Copied to dist/.htaccess by scripts/postbuild.mjs. Upload it together with dist/.
+
+AddDefaultCharset UTF-8
+AddType application/manifest+json .webmanifest
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  # One canonical host: www.energy-plastic.kz -> energy-plastic.kz
+  # (HTTP -> HTTPS is already enforced in Plesk: "Permanent SEO-safe 301 redirect from HTTP to HTTPS".)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+  # Old direct links to /index.html -> /
+  RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # Remove trailing slash: /about/ -> /about
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Existing files (assets, images, sitemap.xml, robots.txt) are served as is.
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  RewriteRule . /index.html [L]
+  # Clean URLs: /about -> about.html (pre-rendered page with its own SEO tags).
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([a-z0-9-]+)$ $1.html [L]
+
+  # Anything else is an unknown page: real 404 status, rendered by the SPA (404.html).
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+  # HTML must always be revalidated so visitors get the newest asset links after a deploy.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  # Vite assets have a content hash in the file name and never change.
+  <FilesMatch "-[A-Za-z0-9_-]{8}\.(js|css|png|jpe?g|webp|avif|svg|mp4|webm|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.(ico|webmanifest)$|^(og-image|icon-\d+|apple-touch-icon|favicon-32x32)\.png$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml application/manifest+json image/svg+xml
 </IfModule>

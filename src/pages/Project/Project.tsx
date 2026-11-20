@@ -1,4 +1,5 @@
 import { Factory, Flame, ShieldCheck } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import scienceFundLogo from "../../assets/science-fund-logo.png";
@@ -9,7 +10,6 @@ import { useTranslatedList } from "../../hooks/useTranslatedList";
 
 import type { Metric, TimelineItem } from "../../types/content";
 
-import "../sharedPages.css";
 import "./Project.css";
 
 type FundingItem = {
@@ -17,8 +17,20 @@ type FundingItem = {
   value: string;
 };
 
+/**
+ * The hero video is decorative and heavy: skip autoplay for visitors who asked
+ * for reduced motion or enabled data saving in their browser.
+ */
+const canAutoplayVideo = () => {
+  if (typeof window === "undefined") return false;
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+  return !reduceMotion && !connection?.saveData;
+};
+
 const Project = () => {
   const { t } = useTranslation();
+  const [allowAutoplay] = useState(canAutoplayVideo);
 
   const market = useTranslatedList<Metric>("project.market.items");
 
@@ -66,11 +78,12 @@ const Project = () => {
 
             <video
               className="project-hero__video"
-              autoPlay
+              autoPlay={allowAutoplay}
               muted
               loop
               playsInline
-              preload="metadata"
+              preload={allowAutoplay ? "auto" : "none"}
+              aria-hidden="true"
             >
               <source
                 src={projectHeroVideo}

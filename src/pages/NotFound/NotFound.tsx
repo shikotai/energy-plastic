@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import PageHero from "../../components/PageHero/PageHero";
-import "../sharedPages.css";
 
 const NotFound = () => {
   const { t } = useTranslation();
@@ -16,7 +15,7 @@ const NotFound = () => {
         text={t("notFound.text")}
       />
 
-      <section className="content-section not-found-actions">
+      <section className="content-section content-section--flush-top">
         <div className="site-container">
           <NavLink className="button button--primary" to="/">
             <ArrowLeft size={18} />

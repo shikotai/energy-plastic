@@ -1,0 +1,65 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.contact-grid > * { min-width: 0; }
+
+.contact-card {
+  min-height: 220px;
+  padding: 34px;
+  border: 1px solid var(--ep-line);
+  border-radius: 24px;
+  background: #fff;
+  transition: transform 260ms var(--ep-ease), box-shadow 260ms var(--ep-ease), border-color 260ms ease;
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: #c7e2d2;
+  box-shadow: 0 22px 46px rgba(13, 109, 69, .09);
+}
+.contact-card svg {
+  color: var(--ep-green-700);
+  transition: transform 320ms var(--ep-ease-spring);
+}
+.contact-card:hover svg { transform: scale(1.15) rotate(-8deg); }
+.contact-card h3 { margin: 45px 0 12px; font-size: 21px; }
+.contact-card a,
+.contact-card p {
+  margin: 0;
+  color: var(--ep-muted);
+  line-height: 1.7;
+  text-decoration: none;
+}
+.contact-card a {
+  display: block;
+  transition: color 160ms ease;
+}
+.contact-card a:hover { color: var(--ep-green-800); }
+
+.notice {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border: 1px solid #d8eadf;
+  border-radius: 16px;
+  background: #f4fbf6;
+  color: #577064;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .contact-grid { gap: 12px; }
+  .contact-card { padding: 24px; min-height: 0; border-radius: 19px; }
+  .contact-card h3 { margin-top: 25px; font-size: 20px; }
+  .contact-card p, .contact-card a { font-size: 14px; line-height: 1.65; }
+  .notice { padding: 16px; }
+}
+
+@media (max-width: 380px) {
+  .contact-card { padding: 20px; }
+}

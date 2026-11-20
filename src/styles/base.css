@@ -1,3 +1,5 @@
+/* Design tokens, reset, layout primitives and buttons. */
+
 :root {
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #17231c;
@@ -17,6 +19,10 @@
   --ep-text: #17231c;
   --ep-muted: #68766e;
   --ep-line: #dfe9e3;
+
+  /* Motion */
+  --ep-ease: cubic-bezier(.22, 1, .36, 1);
+  --ep-ease-spring: cubic-bezier(.34, 1.56, .64, 1);
 }
 
 * { box-sizing: border-box; }
@@ -108,10 +114,24 @@ img { max-width: 100%; }
   font-size: 14px;
   font-weight: 750;
   text-decoration: none;
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+  transition:
+    transform 220ms var(--ep-ease),
+    box-shadow 220ms var(--ep-ease),
+    border-color 180ms ease,
+    background 180ms ease;
 }
 
+.button svg { transition: transform 220ms var(--ep-ease); }
 .button:hover { transform: translateY(-2px); }
+.button:hover svg { transform: translateX(3px); }
+.button:active { transform: translateY(0) scale(.98); }
+.button--primary:hover { box-shadow: 0 14px 30px rgba(13, 109, 69, .25); }
+.button:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--ep-green-600);
+  outline-offset: 3px;
+}
 .button--primary { background: var(--ep-green-800); color: #fff; }
 .button--primary:hover { background: var(--ep-green-950); }
 .button--ghost { border-color: #cfddd5; background: rgba(255,255,255,.58); color: var(--ep-green-900); }

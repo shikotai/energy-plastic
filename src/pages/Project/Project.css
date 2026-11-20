@@ -1,3 +1,61 @@
+/* Project timeline (moved from the former sharedPages.css) */
+.timeline-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--ep-line);
+  border-left: 1px solid var(--ep-line);
+}
+.timeline-list > * { min-width: 0; }
+.timeline-card {
+  min-height: 360px;
+  padding: 34px;
+  border-right: 1px solid var(--ep-line);
+  border-bottom: 1px solid var(--ep-line);
+  background: #fff;
+  transition: background 260ms ease;
+}
+.timeline-card:hover { background: var(--ep-green-50); }
+.timeline-card:first-child { box-shadow: inset 0 4px 0 var(--ep-green-600); }
+.timeline-card__year {
+  display: block;
+  margin-bottom: 72px;
+  color: var(--ep-green-700);
+  font-weight: 900;
+}
+.timeline-card h3 { margin: 0 0 18px; font-size: 28px; }
+.timeline-card ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 11px;
+  list-style: none;
+  color: var(--ep-muted);
+  line-height: 1.5;
+}
+.timeline-card li { position: relative; padding-left: 16px; }
+.timeline-card li::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ep-green-500);
+}
+
+@media (max-width: 900px) {
+  .timeline-list { grid-template-columns: 1fr; }
+  .timeline-card { min-height: auto; }
+  .timeline-card__year { margin-bottom: 40px; }
+}
+
+@media (max-width: 760px) {
+  .timeline-card { padding: 24px; min-height: 0; }
+  .timeline-card__year { margin-bottom: 24px; }
+  .timeline-card h3 { font-size: 23px; }
+}
+
 /* ============================================= */
 /* PROJECT HERO                                  */
 /* ============================================= */
